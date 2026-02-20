@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+
+        .image-container {
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-caption {
+            margin-top: 10px;
+            color: #888;
+            font-style: italic;
+        }
+
+        .bio {
+            color: #555;
+            line-height: 1.8;
+            margin: 25px 0;
+            font-size: 1.1em;
+            padding: 0 15px;
+        }
+
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .social-link {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Name Here</h1>
+            <div class="subtitle">Welcome to my personal space on the web</div>
+        </header>
+        
+        <div class="image-container">
+            <img src="Pumula.jpg" alt="Pumula - Personal Image" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400?text=Pumula.jpg+Not+Found'">
+        </div>
+        <div class="image-caption">Pumula - A special moment captured</div>
+        
+        <div class="bio">
+            <p>Hello! I'm passionate about creating meaningful experiences and sharing them with the world. This is my little corner of the internet where I can express myself and connect with others.</p>
+        </div>
+        
+        <div class="social-links">
+            <a href="#" class="social-link">📧 Email</a>
+            <a href="#" class="social-link">📱 Instagram</a>
+            <a href="#" class="social-link">💼 LinkedIn</a>
+        </div>
+    </div>
+</body>
+  </html>
